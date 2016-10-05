@@ -1,5 +1,5 @@
 # ValleTPV
-TPV rapido, potente y muy facil de aprender. Para bares y restaurantes. Esta diseñado para ser la herramienta perfecta del camarero. Sin dejar de lado la gestión de la empresa. Toma registro de todas las ventas en el TPV. Actualizando un servicio para gestionar varios TPV en distintos locales. El gestor de TPVs es ValleGesTPV totalmente independiente de Punto de Venta. Esto facilita enormemente cualquier gestión que realizar pues todas las modificaciones, consultas y gestiones del TPV son remotas.
+TPV rapido, potente y muy facil de aprender. Para bares y restaurantes. Esta diseñado para ser la herramienta perfecta del camarero. Sin dejar de lado la gestión de la empresa. Toma registro de todas las ventas en el TPV. Utiliza un servicio para gestionar varios TPV en distintos locales. El gestor de TPVs es ValleGesTPV totalmente independiente de Punto de Venta. Esto facilita enormemente cualquier gestión que realizar pues todas las modificaciones, consultas y gestiones del TPV son remotas.
 
 ### IDE
 Para instalar el IDE mono develop.
