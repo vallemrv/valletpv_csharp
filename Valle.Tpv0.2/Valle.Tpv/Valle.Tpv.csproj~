@@ -82,6 +82,7 @@
     <EmbeddedResource Include="iconos\ARROW12Ax.ICO" />
     <EmbeddedResource Include="iconos\ARROW12Dx.ICO" />
     <EmbeddedResource Include="iconos\Backspace.ICO" />
+    <EmbeddedResource Include="iconos\cajonMonedas.jpeg" />
     <EmbeddedResource Include="iconos\Camarero muy ceremonioso llevando bandeja.jpg" />
     <EmbeddedResource Include="iconos\CASH01B.ICO" />
     <EmbeddedResource Include="iconos\Comment.ico" />
@@ -89,10 +90,11 @@
     <EmbeddedResource Include="iconos\CONVERT2.ICO" />
     <EmbeddedResource Include="iconos\Division_Sign%28a%29.png" />
     <EmbeddedResource Include="iconos\dosE.jpeg" />
+    <EmbeddedResource Include="iconos\ERASE00C.ICO" />
     <EmbeddedResource Include="iconos\euro.jpeg" />
     <EmbeddedResource Include="iconos\euro.png" />
     <EmbeddedResource Include="iconos\exit.gif" />
- 
+    <EmbeddedResource Include="iconos\gastos.jpeg" />
     <EmbeddedResource Include="iconos\justo.jpeg" />
     <EmbeddedResource Include="iconos\key.jpeg" />
     <EmbeddedResource Include="iconos\Line Chart.ico" />
@@ -108,7 +110,7 @@
     <EmbeddedResource Include="iconos\visa.jpeg" />
     <EmbeddedResource Include="iconos\M00B.ICO" />
     <EmbeddedResource Include="iconos\SCHED06B.ICO" />
-    
+    <EmbeddedResource Include="iconos\valances.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="gtk-gui\generated.cs" />

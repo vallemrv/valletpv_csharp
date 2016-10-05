@@ -1,18 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Valle.Tpv/ModeloTpv.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../Valle.Library/Valle.GtkUtilidades/Valle.GtkUtilidades/Formularios/DialogoTactil.cs">
     <Files>
-      <File FileName="Valle.Tpv/ModeloTpv.cs" Line="56" Column="11" />
+      <File FileName="../Valle.Library/Valle.Utilidades/Valle.Utilidades/GesImpresoras.cs" Line="1" Column="1" />
+      <File FileName="../Valle.Library/Valle.GtkUtilidades/Valle.GtkUtilidades/Formularios/DialogoTactil.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Valle.GtkUtilidades" expanded="True">
-            <Node name="Controles" expanded="True" />
+            <Node name="Formularios" expanded="True" />
           </Node>
-          <Node name="Valle.Tpv" expanded="True">
-            <Node name="ModeloTpv.cs" selected="True" />
-          </Node>
+          <Node name="Valle.Tpv" expanded="True" selected="True" />
         </State>
       </Pad>
       <Pad Id="ClassPad">
