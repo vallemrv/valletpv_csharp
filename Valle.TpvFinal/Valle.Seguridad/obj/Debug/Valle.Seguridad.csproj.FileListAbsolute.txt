@@ -1,0 +1,5 @@
+Z:\Proyectos\CSharp\Valle\Valle.Seguridad\bin\Debug\Valle.Seguridad.dll
+Z:\Proyectos\CSharp\Valle\Valle.Seguridad\bin\Debug\Valle.Seguridad.pdb
+Z:\Proyectos\CSharp\Valle\Valle.Seguridad\obj\Debug\ResolveAssemblyReference.cache
+Z:\Proyectos\CSharp\Valle\Valle.Seguridad\obj\Debug\Valle.Seguridad.dll
+Z:\Proyectos\CSharp\Valle\Valle.Seguridad\obj\Debug\Valle.Seguridad.pdb

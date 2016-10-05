@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C49A57D3-0936-47F1-B380-187731C981BE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Valle.ToolsTpv</RootNamespace>
+    <AssemblyName>Valle.ToolsTpv</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IDPrometedor.cs" />
+    <Compile Include="Articulo.cs" />
+    <Compile Include="CrearBaseDatos.cs" />
+    <Compile Include="GeneradorDeArticulos.cs" />
+    <Compile Include="GuardarTicket.cs" />
+    <Compile Include="GesAlmacen.cs" />
+    <Compile Include="GesCamareros.cs" />
+    <Compile Include="GesMesas.cs" />
+    <Compile Include="GesMesasRem.cs" />
+    <Compile Include="GesSincronizar.cs" />
+    <Compile Include="GesVentas.cs" />
+    <Compile Include="RegistrarServidor.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Valle.Distribuido\Valle.Distribuido\Valle.Distribuido.csproj">
+      <Project>{F4D3A794-D1CB-443C-9A0B-E524E94C7322}</Project>
+      <Name>Valle.Distribuido</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.Utilidades\Valle.Utilidades\Valle.Utilidades.csproj">
+      <Project>{0291A4FE-C511-4FA2-8132-705A08973015}</Project>
+      <Name>Valle.Utilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.SqlUtilidades\Valle.SqlUtilidades\Valle.SqlUtilidades.csproj">
+      <Project>{458E7C94-0965-4B21-A45F-D079CAC27759}</Project>
+      <Name>Valle.SqlUtilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.Seguridad\Valle.Seguridad.csproj">
+      <Project>{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}</Project>
+      <Name>Valle.Seguridad</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

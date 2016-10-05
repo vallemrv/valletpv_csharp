@@ -1,0 +1,11 @@
+using System;
+namespace Valle.Utilidades
+{
+	public class Valle
+	{
+		public Valle()
+		{
+		}
+	}
+}
+

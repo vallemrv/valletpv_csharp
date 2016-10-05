@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9530B792-23E0-4EDD-823F-F569E1536995}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Valle.GtkUtilidades</AssemblyName>
+    <RootNamespace>Valle.GtkUtilidades</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="iconos\ERASE00C.ICO" />
+    <EmbeddedResource Include="iconos\~APP21MB.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\charEsp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="ClasesAuxiliares\FormateoCodigo.cs" />
+    <Compile Include="ClasesAuxiliares\InfAMostrar.cs" />
+    <Compile Include="Controles\ArbolDeVista.cs" />
+    <Compile Include="Controles\CImagen.cs" />
+    <Compile Include="Controles\MyTextView.cs" />
+    <Compile Include="Controles\Tecla.cs" />
+    <Compile Include="Controles\TxtHoras.cs" />
+    <Compile Include="Formularios\ContenedorFlot.cs" />
+    <Compile Include="Formularios\Splash.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.Splash.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.MiBoton.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.ArbolDeVista.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.CImagen.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.TxtHoras.cs" />
+    <Compile Include="Controles\MiLabel.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.MiLabel.cs" />
+    <Compile Include="Controles\Botonera.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.Botonera.cs" />
+    <Compile Include="Formularios\TecladoNumerico.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.TecladoNumerico.cs" />
+    <Compile Include="Formularios\FormularioBase.cs" />
+    <Compile Include="Formularios\TecladoAlfavetico.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.TecladoAlfavetico.cs" />
+    <Compile Include="ClasesAuxiliares\InvokeAsync.cs" />
+    <Compile Include="ClasesAuxiliares\BarraProgresoInterfaz.cs" />
+    <Compile Include="Formularios\VenBotones.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.VenBotones.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.FormularioBase.cs" />
+    <Compile Include="Controles\ScrollTactil.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.ScrollTactil.cs" />
+    <Compile Include="Formularios\DialogoTactil.cs" />
+    <Compile Include="gtk-gui\Valle.GtkUtilidades.DialogoTactil.cs" />
+    <Compile Include="ClasesAuxiliares\DocumentPrint.cs" />
+    <Compile Include="ClasesAuxiliares\IMostrarInfomacion.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="ClasesAuxiliares\" />
+    <Folder Include="Controles\" />
+    <Folder Include="Formularios\" />
+    <Folder Include="iconos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Valle.Utilidades\Valle.Utilidades\Valle.Utilidades.csproj">
+      <Project>{0291A4FE-C511-4FA2-8132-705A08973015}</Project>
+      <Name>Valle.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

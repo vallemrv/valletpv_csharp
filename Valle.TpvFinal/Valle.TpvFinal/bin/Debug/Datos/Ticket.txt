@@ -1,0 +1,26 @@
+Camarero: Manuel Rodriguez 
+Mesa: Zona 6 
+
+Can  Descripcion        Precio   Total
+--------------------------------------
+   3 Cosecha              2,00    6,00
+
+
+Totaññññññññl Ticket :
+                  6,00 €
+Entrega      :                  6,00 €
+Cambio       :                  0,00 €
+
+13/11/2011 22:57
+
+Ticket Num: 117
+
+
+
+
+
+  
+
+
+
+

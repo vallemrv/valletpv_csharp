@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Valle.TpvFinal</RootNamespace>
+    <AssemblyName>ValleTpv</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="gtk-dotnet, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gtk-dotnet-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Cairo" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="iconos\Line Chart.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\UnE.jpeg" />
+    <EmbeddedResource Include="iconos\dosE.jpeg" />
+    <EmbeddedResource Include="iconos\500E.jpeg" />
+    <EmbeddedResource Include="iconos\200E.jpeg" />
+    <EmbeddedResource Include="iconos\100E.jpeg" />
+    <EmbeddedResource Include="iconos\50E.jpeg" />
+    <EmbeddedResource Include="iconos\50C.jpeg" />
+    <EmbeddedResource Include="iconos\20E.jpeg" />
+    <EmbeddedResource Include="iconos\20C.jpeg" />
+    <EmbeddedResource Include="iconos\10E.jpeg" />
+    <EmbeddedResource Include="iconos\10C.jpeg" />
+    <EmbeddedResource Include="iconos\5E.jpeg" />
+    <EmbeddedResource Include="iconos\5C.jpeg" />
+    <EmbeddedResource Include="iconos\~APP21MB.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\CASH01B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\STARTUP.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\euro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\NET14.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\SCHED06B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\M00B.ICO" />
+    <EmbeddedResource Include="iconos\justo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Formularios\Tpv.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.Tpv.cs" />
+    <Compile Include="ModeloTpv.cs" />
+    <Compile Include="Formularios\ConfIniTpv.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ConfIniTpv.cs" />
+    <Compile Include="Auxiliares\RutasConfig.cs" />
+    <Compile Include="Auxiliares\ModeloTpv.config.cs" />
+    <Compile Include="Formularios\DesgloseTicket.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.DesgloseTicket.cs" />
+    <Compile Include="Formularios\DividirTiket.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.DividirTiket.cs" />
+    <Compile Include="Formularios\ElegirMoneda.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ElegirMoneda.cs" />
+    <Compile Include="Formularios\FiltrosCierres.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.FiltrosCierres.cs" />
+    <Compile Include="Formularios\Herramientas.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.Herramientas.cs" />
+    <Compile Include="Formularios\HerRapidasArticulos.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.HerRapidasArticulos.cs" />
+    <Compile Include="Formularios\TicketCobrado.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.TicketCobrado.cs" />
+    <Compile Include="Formularios\ImprimirTicket.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ImprimirTicket.cs" />
+    <Compile Include="Formularios\ImfTicket.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ImfTicket.cs" />
+    <Compile Include="Formularios\ListadoCierres.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ListadoCierres.cs" />
+    <Compile Include="Formularios\SelectorDeMesas.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.SelectorDeMesas.cs" />
+    <Compile Include="Auxiliares\VisorDeInformes.cs" />
+    <Compile Include="Formularios\VenSecciones.cs" />
+    <Compile Include="Auxiliares\ImpresoraTicket.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Formularios\" />
+    <Folder Include="Controles\" />
+    <Folder Include="iconos\" />
+    <Folder Include="Auxiliares\" />
+    <Folder Include="gtk-gui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iconos\exit.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\ARROW12Ax.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\ARROW12Dx.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\ERASE00C.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\Comment.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\filefind.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\NET13.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="iconos\Division_Sign%28a%29.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\accept.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ALPH03A.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\APPS Info.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ARITH03C.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ARROW12Bx.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ARROW12Cx.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ARROW23D.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ARRWS15B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Backspace.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\BPAD02C.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\button_cancel.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\button_ok.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\checkOk.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\CheckX.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\COMMS04D.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\configure_toolbars.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\CONVERT2.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\CONVERT3.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\cup_coffee.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\decrypted.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\DIRTREE1.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\editpaste.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\encrypted.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ERASE00B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ERASE00D.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\ERASE01.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\exec.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\{{F02B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\fileprint.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\filesave.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\find.GIF">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\HOLD00C.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Line Chart.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Misc05.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\normal_Balance - 1024x768.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\OFFCE02C.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Print.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Prohib_2.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\run.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\SCHED00E.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\TABLE00B.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\TELPD00A.ICO">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\unlock.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\user.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\x.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\Camarero muy ceremonioso llevando bandeja.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="iconos\charEsp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Valle.GtkUtilidades\Valle.GtkUtilidades\Valle.GtkUtilidades.csproj">
+      <Project>{9530B792-23E0-4EDD-823F-F569E1536995}</Project>
+      <Name>Valle.GtkUtilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.Utilidades\Valle.Utilidades\Valle.Utilidades.csproj">
+      <Project>{0291A4FE-C511-4FA2-8132-705A08973015}</Project>
+      <Name>Valle.Utilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.SqlUtilidades\Valle.SqlUtilidades\Valle.SqlUtilidades.csproj">
+      <Project>{458E7C94-0965-4B21-A45F-D079CAC27759}</Project>
+      <Name>Valle.SqlUtilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.Distribuido\Valle.Distribuido\Valle.Distribuido.csproj">
+      <Project>{F4D3A794-D1CB-443C-9A0B-E524E94C7322}</Project>
+      <Name>Valle.Distribuido</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.ToolsTpv\Valle.ToolsTpv.csproj">
+      <Project>{C49A57D3-0936-47F1-B380-187731C981BE}</Project>
+      <Name>Valle.ToolsTpv</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="iconos\tpv.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+</Project>

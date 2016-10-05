@@ -1,0 +1,8 @@
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\obj\Debug\ResolveAssemblyReference.cache
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Debug\Valle.SqlUtilidades.dll
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Debug\Valle.SqlUtilidades.pdb
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Debug\MySql.Data.dll
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Debug\Valle.Utilidades.dll
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Debug\Valle.Utilidades.pdb
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\obj\Debug\Valle.SqlUtilidades.dll
+Z:\Proyectos\CSharp\Valle\Valle.SqlUtilidades\Valle.SqlUtilidades\obj\Debug\Valle.SqlUtilidades.pdb

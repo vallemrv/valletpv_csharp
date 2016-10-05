@@ -1,0 +1,25 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Valle.SqlUtilidades/Valle.SqlUtilidades/Gestores/GesMySQL.cs">
+    <Files>
+      <File FileName="GtkAuxVisual/Main.cs" Line="11" Column="4" />
+      <File FileName="Valle.ToolsTpv/IDPrometedor.cs" Line="13" Column="35" />
+      <File FileName="Valle.TpvFinal/Formularios/Tpv.cs" Line="9" Column="13" />
+      <File FileName="Valle.GtkUtilidades/Valle.GtkUtilidades/Controles/Botonera.cs" Line="3" Column="13" />
+      <File FileName="Valle.TpvFinal/ModeloTpv.cs" Line="1" Column="1" />
+      <File FileName="Valle.SqlUtilidades/Valle.SqlUtilidades/Gestores/GesMySQL.cs" Line="337" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True" />
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

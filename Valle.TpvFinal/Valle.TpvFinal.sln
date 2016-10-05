@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.TpvFinal", "Valle.TpvFinal\Valle.TpvFinal.csproj", "{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.Utilidades", "Valle.Utilidades\Valle.Utilidades\Valle.Utilidades.csproj", "{0291A4FE-C511-4FA2-8132-705A08973015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.SqlUtilidades", "Valle.SqlUtilidades\Valle.SqlUtilidades\Valle.SqlUtilidades.csproj", "{458E7C94-0965-4B21-A45F-D079CAC27759}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.Seguridad", "Valle.Seguridad\Valle.Seguridad.csproj", "{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.Distribuido", "Valle.Distribuido\Valle.Distribuido\Valle.Distribuido.csproj", "{F4D3A794-D1CB-443C-9A0B-E524E94C7322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.GtkUtilidades", "Valle.GtkUtilidades\Valle.GtkUtilidades\Valle.GtkUtilidades.csproj", "{9530B792-23E0-4EDD-823F-F569E1536995}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valle.ToolsTpv", "Valle.ToolsTpv\Valle.ToolsTpv.csproj", "{C49A57D3-0936-47F1-B380-187731C981BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Valle.AppTpv", "Valle.AppTpv", "{015E33BB-A41C-488B-AC56-41E51004E890}"
+	ProjectSection(MonoDevelopProperties) = preProject
+		BaseDirectory = Valle.AppAux
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestartTpv", "Valle.AppAux\RestartTpv\RestartTpv.csproj", "{66069076-3A0A-4D24-9062-BCD19028E3DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TpvSync", "Valle.AppAux\TpvSync\TpvSync.csproj", "{84859A0E-DC0F-4720-9706-CD9E5F391241}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "updates", "Valle.AppAux\updates\updates.csproj", "{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GtkAuxVisual", "GtkAuxVisual\GtkAuxVisual.csproj", "{B3EAB275-410E-4C12-B75F-B74E0097B96F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0291A4FE-C511-4FA2-8132-705A08973015}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0291A4FE-C511-4FA2-8132-705A08973015}.Debug|x86.Build.0 = Debug|Any CPU
+		{0291A4FE-C511-4FA2-8132-705A08973015}.Release|x86.ActiveCfg = Release|Any CPU
+		{0291A4FE-C511-4FA2-8132-705A08973015}.Release|x86.Build.0 = Release|Any CPU
+		{458E7C94-0965-4B21-A45F-D079CAC27759}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{458E7C94-0965-4B21-A45F-D079CAC27759}.Debug|x86.Build.0 = Debug|Any CPU
+		{458E7C94-0965-4B21-A45F-D079CAC27759}.Release|x86.ActiveCfg = Release|Any CPU
+		{458E7C94-0965-4B21-A45F-D079CAC27759}.Release|x86.Build.0 = Release|Any CPU
+		{66069076-3A0A-4D24-9062-BCD19028E3DA}.Debug|x86.ActiveCfg = Debug|x86
+		{66069076-3A0A-4D24-9062-BCD19028E3DA}.Debug|x86.Build.0 = Debug|x86
+		{66069076-3A0A-4D24-9062-BCD19028E3DA}.Release|x86.ActiveCfg = Release|x86
+		{66069076-3A0A-4D24-9062-BCD19028E3DA}.Release|x86.Build.0 = Release|x86
+		{84859A0E-DC0F-4720-9706-CD9E5F391241}.Debug|x86.ActiveCfg = Debug|x86
+		{84859A0E-DC0F-4720-9706-CD9E5F391241}.Debug|x86.Build.0 = Debug|x86
+		{84859A0E-DC0F-4720-9706-CD9E5F391241}.Release|x86.ActiveCfg = Release|x86
+		{84859A0E-DC0F-4720-9706-CD9E5F391241}.Release|x86.Build.0 = Release|x86
+		{9530B792-23E0-4EDD-823F-F569E1536995}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9530B792-23E0-4EDD-823F-F569E1536995}.Debug|x86.Build.0 = Debug|Any CPU
+		{9530B792-23E0-4EDD-823F-F569E1536995}.Release|x86.ActiveCfg = Release|Any CPU
+		{9530B792-23E0-4EDD-823F-F569E1536995}.Release|x86.Build.0 = Release|Any CPU
+		{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}.Debug|x86.ActiveCfg = Debug|x86
+		{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}.Debug|x86.Build.0 = Debug|x86
+		{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}.Release|x86.ActiveCfg = Release|x86
+		{A0A5993E-9CAC-42E7-B9F4-8E2C52F9573B}.Release|x86.Build.0 = Release|x86
+		{B3EAB275-410E-4C12-B75F-B74E0097B96F}.Debug|x86.ActiveCfg = Debug|x86
+		{B3EAB275-410E-4C12-B75F-B74E0097B96F}.Debug|x86.Build.0 = Debug|x86
+		{B3EAB275-410E-4C12-B75F-B74E0097B96F}.Release|x86.ActiveCfg = Release|x86
+		{B3EAB275-410E-4C12-B75F-B74E0097B96F}.Release|x86.Build.0 = Release|x86
+		{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}.Debug|x86.Build.0 = Debug|Any CPU
+		{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}.Release|x86.ActiveCfg = Release|Any CPU
+		{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}.Release|x86.Build.0 = Release|Any CPU
+		{C49A57D3-0936-47F1-B380-187731C981BE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C49A57D3-0936-47F1-B380-187731C981BE}.Debug|x86.Build.0 = Debug|Any CPU
+		{C49A57D3-0936-47F1-B380-187731C981BE}.Release|x86.ActiveCfg = Release|Any CPU
+		{C49A57D3-0936-47F1-B380-187731C981BE}.Release|x86.Build.0 = Release|Any CPU
+		{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC}.Debug|x86.ActiveCfg = Debug|x86
+		{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC}.Debug|x86.Build.0 = Debug|x86
+		{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC}.Release|x86.ActiveCfg = Release|x86
+		{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC}.Release|x86.Build.0 = Release|x86
+		{F4D3A794-D1CB-443C-9A0B-E524E94C7322}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F4D3A794-D1CB-443C-9A0B-E524E94C7322}.Debug|x86.Build.0 = Debug|Any CPU
+		{F4D3A794-D1CB-443C-9A0B-E524E94C7322}.Release|x86.ActiveCfg = Release|Any CPU
+		{F4D3A794-D1CB-443C-9A0B-E524E94C7322}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{66069076-3A0A-4D24-9062-BCD19028E3DA} = {015E33BB-A41C-488B-AC56-41E51004E890}
+		{84859A0E-DC0F-4720-9706-CD9E5F391241} = {015E33BB-A41C-488B-AC56-41E51004E890}
+		{D924BF05-CED7-41A7-9A2F-C04EFE7AFCBC} = {015E33BB-A41C-488B-AC56-41E51004E890}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Valle.TpvFinal\Valle.TpvFinal.csproj
+	EndGlobalSection
+EndGlobal

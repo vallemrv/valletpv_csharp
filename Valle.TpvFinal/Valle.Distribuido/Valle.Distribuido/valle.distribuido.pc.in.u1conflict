@@ -1,0 +1,6 @@
+Name: Valle.Distribuido
+Description: Valle.Distribuido
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/Valle.Distribuido.dll
