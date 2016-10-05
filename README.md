@@ -16,6 +16,9 @@ $ sudo apt-get install mono-complete
 $ sudo apt-get install mono-sharp2
 $ sudo apt-get install mysql-server
 ```
+Una vez terminada toda la instalación de las dependencias. Crear una base de datos con la instrucciones SQL que esta en el directorio baseBak contiene datos de prueba arrancar el ValleTPV e introducir los datos de configuración para el programa.
+ValleGesTPV para gestionar articulos, fotos, crear zonas de servicio, etc....
+Un saludo...
 
 ### En otros sistemas operativos
 
