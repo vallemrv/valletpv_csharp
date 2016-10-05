@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<gesServidores>
+  <xs:schema id="gesServidores" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="gesServidores" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="servidores">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IDServidor" msdata:AutoIncrement="true" type="xs:int" />
+                <xs:element name="Nombre" type="xs:string" minOccurs="0" />
+                <xs:element name="Ip" type="xs:string" minOccurs="0" />
+                <xs:element name="Puerto" type="xs:int" minOccurs="0" />
+                <xs:element name="PortSockt" type="xs:int" minOccurs="0" />
+                <xs:element name="Protocolo" type="xs:string" minOccurs="0" />
+                <xs:element name="ExportarComun" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="activo">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="IDServidor" type="xs:int" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+      <xs:unique name="KeyIdServidor" msdata:PrimaryKey="true">
+        <xs:selector xpath=".//servidores" />
+        <xs:field xpath="IDServidor" />
+      </xs:unique>
+      <xs:keyref name="servidorActivo" refer="KeyIdServidor" msdata:ConstraintOnly="true">
+        <xs:selector xpath=".//activo" />
+        <xs:field xpath="IDServidor" />
+      </xs:keyref>
+    </xs:element>
+  </xs:schema>
+  <servidores>
+    <IDServidor>0</IDServidor>
+    <Nombre>brasilia</Nombre>
+    <Ip>192.168.1.10</Ip>
+    <Puerto>8001</Puerto>
+    <PortSockt>8000</PortSockt>
+    <Protocolo>tcp</Protocolo>
+    <ExportarComun>false</ExportarComun>
+  </servidores>
+  <activo>
+    <IDServidor>0</IDServidor>
+  </activo>
+</gesServidores>

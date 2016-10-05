@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2C9394CA-57D0-4DC0-B6F5-C90157C84433}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <RootNamespace>Valle.GesTpv</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>GesTpv</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AssemblyName>Valle.GesTpv</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="Valle.Utilidades, Version=1.0.4393.30640, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.Utilidades\Valle.Utilidades\bin\Release\Valle.Utilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.2.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Release\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Valle.SqlUtilidades, Version=1.0.4393.30641, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.SqlUtilidades\Valle.SqlUtilidades\bin\Release\Valle.SqlUtilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Valle.Utilidades, Version=1.0.4393.30640, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.Utilidades\Valle.Utilidades\bin\Release\Valle.Utilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Valle.Seguridad, Version=1.0.4393.30642, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.Seguridad\bin\Release\Valle.Seguridad.dll</HintPath>
+    </Reference>
+    <Reference Include="Valle.GtkUtilidades, Version=1.0.4393.30641, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.GtkUtilidades\Valle.GtkUtilidades\bin\Release\Valle.GtkUtilidades.dll</HintPath>
+    </Reference>
+    <Reference Include="Valle.Distribuido, Version=1.0.4393.30642, Culture=neutral, PublicKeyToken=null">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Valle.TpvFinal\Valle.Distribuido\Valle.Distribuido\bin\Release\Valle.Distribuido.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Formularios\VenAlmacenes.cs" />
+    <Compile Include="Formularios\VenAñadirTeclas.cs" />
+    <Compile Include="Formularios\VenArticulos.cs" />
+    <Compile Include="Formularios\VenArticulosSimple.cs" />
+    <Compile Include="Formularios\VenBuscadorSimple.cs" />
+    <Compile Include="Formularios\VenCamareros.cs" />
+    <Compile Include="Formularios\VenColores.cs" />
+    <Compile Include="Formularios\VenConfigCon.cs" />
+    <Compile Include="Formularios\VenConfigTpv.cs" />
+    <Compile Include="Formularios\VenElegirArt.cs" />
+    <Compile Include="Formularios\VenExportImport.cs" />
+    <Compile Include="Formularios\VenFamilias.cs" />
+    <Compile Include="Formularios\VenFavoritos.cs" />
+    <Compile Include="Formularios\VenImporExporPlan.cs" />
+    <Compile Include="Formularios\VenInstComision.cs" />
+    <Compile Include="Formularios\VenListados.cs" />
+    <Compile Include="Formularios\VenMesas.cs" />
+    <Compile Include="Formularios\VenPlanig.cs" />
+    <Compile Include="Formularios\VenPrincipal.cs" />
+    <Compile Include="Formularios\VenPrivilegios.cs" />
+    <Compile Include="Formularios\VenSecciones.cs" />
+    <Compile Include="Formularios\VenSincronizar.cs" />
+    <Compile Include="Formularios\VenTeclados.cs" />
+    <Compile Include="Formularios\VenTecladosFav.cs" />
+    <Compile Include="Formularios\VenTpvs.cs" />
+    <Compile Include="Formularios\VenUsuarios.cs" />
+    <Compile Include="Formularios\VenZonas.cs" />
+    <Compile Include="ClasAux\DatosTecla.cs" />
+    <Compile Include="ClasAux\DibujoFlotante.cs" />
+    <Compile Include="ClasAux\GeneradorTeclados.cs" />
+    <Compile Include="ClasAux\GesBaseLocal.cs" />
+    <Compile Include="ClasAux\GesPlantillasTb.cs" />
+    <Compile Include="ClasAux\GesServidores.cs" />
+    <Compile Include="ClasAux\ImportarExportar.cs" />
+    <Compile Include="ClasAux\PaginasArticulos.cs" />
+    <Compile Include="ClasAux\Planing.cs" />
+    <Compile Include="ClasAux\Rutas.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenPrincipal.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenConfigCon.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenExportImport.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenArticulos.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenArticulosSimple.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenBuscadorSimple.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenAlmacenes.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenFamilias.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenSecciones.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenColores.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenTpvs.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenZonas.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenMesas.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenCamareros.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenElegirArt.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenConfigTpv.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenUsuarios.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenPrivilegios.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenFavoritos.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenAñadirTeclas.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenSincronizar.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenListados.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenTeclados.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenTecladosFav.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenPlanig.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenImporExporPlan.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenInstComision.cs" />
+    <Compile Include="Formularios\VenPrecios.cs" />
+    <Compile Include="gtk-gui\Valle.GesTpv.VenPrecios.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Deployment.LinuxDeployData scriptName="gestpv" />
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+  <ItemGroup>
+    <Folder Include="Formularios\" />
+    <Folder Include="ClasAux\" />
+    <Folder Include="Iconos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Iconos\ABSTR01F.ICO" />
+    <None Include="Iconos\accept.ico" />
+    <None Include="Iconos\ACIRAN.ICO" />
+    <None Include="Iconos\ALPH03A.ICO" />
+    <None Include="Iconos\~APP21MA.ICO" />
+    <None Include="Iconos\~APP21MB.ICO" />
+    <None Include="Iconos\APPS Info.ico" />
+    <None Include="Iconos\ARITH03C.ICO" />
+    <None Include="Iconos\ARROW12Ax.ICO" />
+    <None Include="Iconos\ARROW12Bx.ICO" />
+    <None Include="Iconos\ARROW12Cx.ICO" />
+    <None Include="Iconos\ARROW12Dx.ICO" />
+    <None Include="Iconos\ARROW23D.ICO" />
+    <None Include="Iconos\ARRWS15B.ICO" />
+    <None Include="Iconos\Backspace.ICO" />
+    <None Include="Iconos\barracurba.png" />
+    <None Include="Iconos\BarraRect.png" />
+    <None Include="Iconos\BPAD02C.ICO" />
+    <None Include="Iconos\Burn.ico" />
+    <None Include="Iconos\button_cancel.gif" />
+    <None Include="Iconos\button_ok.gif" />
+    <None Include="Iconos\CASH01B.ICO" />
+    <None Include="Iconos\checkOk.ico" />
+    <None Include="Iconos\CheckX.ico" />
+    <None Include="Iconos\Comment.ico" />
+    <None Include="Iconos\COMMS04D.ICO" />
+    <None Include="Iconos\comunicacion.gif" />
+    <None Include="Iconos\configure_toolbars.gif" />
+    <None Include="Iconos\CONVERT2.ICO" />
+    <None Include="Iconos\CONVERT3.ICO" />
+    <None Include="Iconos\cup_coffee.ico" />
+    <None Include="Iconos\decrypted.gif" />
+    <None Include="Iconos\DIRTREE1.ICO" />
+    <None Include="Iconos\editpaste.gif" />
+    <None Include="Iconos\em110.gif" />
+    <None Include="Iconos\encrypted.gif" />
+    <None Include="Iconos\ERASE00B.ICO" />
+    <None Include="Iconos\ERASE00C.ICO" />
+    <None Include="Iconos\ERASE00D.ICO" />
+    <None Include="Iconos\ERASE01.ICO" />
+    <None Include="Iconos\euro.png" />
+    <None Include="Iconos\exec.gif" />
+    <None Include="Iconos\exit.gif" />
+    <None Include="Iconos\EXIT00C.ICO" />
+    <None Include="Iconos\{{F02B.ICO" />
+    <None Include="Iconos\filefind.gif" />
+    <None Include="Iconos\fileprint.gif" />
+    <None Include="Iconos\HOLD00C.ICO" />
+    <None Include="Iconos\ImgSpl.png" />
+    <None Include="Iconos\keyboard.png" />
+    <None Include="Iconos\losas.png" />
+    <None Include="Iconos\Mesa.png" />
+    <None Include="Iconos\mesaalta.png" />
+    <None Include="Iconos\Misc05.ico" />
+    <None Include="Iconos\NET14.ICO" />
+    <None Include="Iconos\papelera.png" />
+    <None Include="Iconos\Sombra.png" />
+    <None Include="Iconos\SplashTpv.png" />
+    <None Include="Iconos\TABLE00B.ICO" />
+    <None Include="Iconos\TELPD00A.ICO" />
+    <None Include="Iconos\touch screen kiosk.ico" />
+  </ItemGroup>
+</Project>

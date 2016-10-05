@@ -1,0 +1,5 @@
+Z:\Proyectos\CSharp\Valle\Valle.Utilidades\Valle.Utilidades\bin\Debug\Valle.Utilidades.dll
+Z:\Proyectos\CSharp\Valle\Valle.Utilidades\Valle.Utilidades\bin\Debug\Valle.Utilidades.pdb
+Z:\Proyectos\CSharp\Valle\Valle.Utilidades\Valle.Utilidades\obj\Debug\ResolveAssemblyReference.cache
+Z:\Proyectos\CSharp\Valle\Valle.Utilidades\Valle.Utilidades\obj\Debug\Valle.Utilidades.dll
+Z:\Proyectos\CSharp\Valle\Valle.Utilidades\Valle.Utilidades\obj\Debug\Valle.Utilidades.pdb

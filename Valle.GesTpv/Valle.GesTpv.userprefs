@@ -1,0 +1,26 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Valle.GesTpv/ClasAux/ImportarExportar.cs">
+    <Files>
+      <File FileName="Valle.GesTpv/Formularios/VenCamareros.cs" Line="163" Column="1" />
+      <File FileName="Valle.GesTpv/ClasAux/ImportarExportar.cs" Line="284" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Valle.GesTpv" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

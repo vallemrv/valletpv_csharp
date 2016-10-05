@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Valle.Distribuido/GesMensajes.cs" ctype="Workbench">
+    <Files>
+      <File FileName="Valle.Distribuido/GesMensajes.cs" Line="50" Column="8" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Valle.Distribuido" expanded="True">
+            <Node name="Socket" expanded="True" />
+            <Node name="GesMensajes.cs" selected="True" />
+          </Node>
+          <Node name="Valle.SqlUtilidades" expanded="True">
+            <Node name="Gestores" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

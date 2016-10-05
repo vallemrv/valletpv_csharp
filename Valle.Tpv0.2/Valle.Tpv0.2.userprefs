@@ -1,0 +1,29 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Valle.Tpv/ModeloTpv.cs">
+    <Files>
+      <File FileName="Valle.Tpv/ModeloTpv.cs" Line="56" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Valle.GtkUtilidades" expanded="True">
+            <Node name="Controles" expanded="True" />
+          </Node>
+          <Node name="Valle.Tpv" expanded="True">
+            <Node name="ModeloTpv.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True">
+          <Node name="Valle.Tpv" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

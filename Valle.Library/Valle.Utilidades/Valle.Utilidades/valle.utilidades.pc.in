@@ -1,0 +1,6 @@
+Name: Valle.Utilidades
+Description: Valle.Utilidades
+Version: 0.1
+
+Requires: 
+Libs: -r:@expanded_libdir@/@PACKAGE@/Valle.Utilidades.dll

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D19F5A42-37B8-495D-8C7A-5C432871376C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Valle.TpvFinal</RootNamespace>
+    <AssemblyName>ValleTpv</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="gdk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glib-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glib-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>glade-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="pango-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="atk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <SpecificVersion>False</SpecificVersion>
+      <Package>gtk-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="Mono.Posix" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Cairo" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gtk-gui\gui.stetic">
+      <LogicalName>gui.stetic</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iconos\{{F02B.ICO" />
+    <EmbeddedResource Include="iconos\~APP21MB.ICO" />
+    <EmbeddedResource Include="iconos\100E.jpeg" />
+    <EmbeddedResource Include="iconos\10C.jpeg" />
+    <EmbeddedResource Include="iconos\10E.jpeg" />
+    <EmbeddedResource Include="iconos\200E.jpeg" />
+    <EmbeddedResource Include="iconos\20C.jpeg" />
+    <EmbeddedResource Include="iconos\20E.jpeg" />
+    <EmbeddedResource Include="iconos\500E.jpeg" />
+    <EmbeddedResource Include="iconos\50C.jpeg" />
+    <EmbeddedResource Include="iconos\50E.jpeg" />
+    <EmbeddedResource Include="iconos\5C.jpeg" />
+    <EmbeddedResource Include="iconos\5E.jpeg" />
+    <EmbeddedResource Include="iconos\ALPH03A.ICO" />
+    <EmbeddedResource Include="iconos\ARROW12Ax.ICO" />
+    <EmbeddedResource Include="iconos\ARROW12Dx.ICO" />
+    <EmbeddedResource Include="iconos\Backspace.ICO" />
+    <EmbeddedResource Include="iconos\cajonMonedas.jpeg" />
+    <EmbeddedResource Include="iconos\Camarero muy ceremonioso llevando bandeja.jpg" />
+    <EmbeddedResource Include="iconos\CASH01B.ICO" />
+    <EmbeddedResource Include="iconos\Comment.ico" />
+    <EmbeddedResource Include="iconos\configure_toolbars.gif" />
+    <EmbeddedResource Include="iconos\CONVERT2.ICO" />
+    <EmbeddedResource Include="iconos\Division_Sign%28a%29.png" />
+    <EmbeddedResource Include="iconos\dosE.jpeg" />
+    <EmbeddedResource Include="iconos\ERASE00C.ICO" />
+    <EmbeddedResource Include="iconos\euro.jpeg" />
+    <EmbeddedResource Include="iconos\euro.png" />
+    <EmbeddedResource Include="iconos\exit.gif" />
+    <EmbeddedResource Include="iconos\gastos.jpeg" />
+    <EmbeddedResource Include="iconos\justo.jpeg" />
+    <EmbeddedResource Include="iconos\key.jpeg" />
+    <EmbeddedResource Include="iconos\Line Chart.ico" />
+    <EmbeddedResource Include="iconos\monedas.jpeg" />
+    <EmbeddedResource Include="iconos\MUNECO_CANDAO_03.png" />
+    <EmbeddedResource Include="iconos\NET13.ICO" />
+    <EmbeddedResource Include="iconos\NET14.ICO" />
+    <EmbeddedResource Include="iconos\OFFCE02C.ICO" />
+    <EmbeddedResource Include="iconos\STARTUP.ICO" />
+    <EmbeddedResource Include="iconos\TABLE00B.ICO" />
+    <EmbeddedResource Include="iconos\UnE.jpeg" />
+    <EmbeddedResource Include="iconos\union.jpeg" />
+    <EmbeddedResource Include="iconos\visa.jpeg" />
+    <EmbeddedResource Include="iconos\M00B.ICO" />
+    <EmbeddedResource Include="iconos\SCHED06B.ICO" />
+    <EmbeddedResource Include="iconos\valances.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="gtk-gui\generated.cs" />
+    <Compile Include="Auxiliares\DegloseArqueo.cs" />
+    <Compile Include="Auxiliares\ImpresoraTicket.cs" />
+    <Compile Include="Auxiliares\ModeloTpv.config.cs" />
+    <Compile Include="Auxiliares\RutasConfig.cs" />
+    <Compile Include="Auxiliares\VisorDeInformes.cs" />
+    <Compile Include="Formularios\ArqueoCaja.cs" />
+    <Compile Include="Formularios\ConfIniTpv.cs" />
+    <Compile Include="Formularios\DesgloseTicket.cs" />
+    <Compile Include="Formularios\DividirTiket.cs" />
+    <Compile Include="Formularios\ElegirMoneda.cs" />
+    <Compile Include="Formularios\FiltrosCierres.cs" />
+    <Compile Include="Formularios\Herramientas.cs" />
+    <Compile Include="Formularios\HerRapidasArticulos.cs" />
+    <Compile Include="Formularios\ImfTicket.cs" />
+    <Compile Include="Formularios\ImprimirTicket.cs" />
+    <Compile Include="Formularios\ListadoCierres.cs" />
+    <Compile Include="Formularios\SelectorDeMesas.cs" />
+    <Compile Include="Formularios\TicketCobrado.cs" />
+    <Compile Include="Formularios\Tpv.cs" />
+    <Compile Include="Formularios\VenClaves.cs" />
+    <Compile Include="Formularios\VenSecciones.cs" />
+    <Compile Include="laVista\generated.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.ConfIniTpv.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.DesgloseTicket.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.DividirTiket.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.ElegirMoneda.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.FiltrosCierres.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.Herramientas.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.HerRapidasArticulos.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.ImfTicket.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.ImprimirTicket.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.ListadoCierres.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.SelectorDeMesas.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.TicketCobrado.cs" />
+    <Compile Include="laVista\Valle.TpvFinal.Tpv.cs" />
+    <Compile Include="ModeloTpv.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.ArqueoCaja.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.VenClaves.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="gtk-gui\Valle.TpvFinal.VenConfiguracion.cs" />
+    <Compile Include="Formularios\VenConfiguracion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Valle.Library\Valle.Distribuido\Valle.Distribuido\Valle.Distribuido.csproj">
+      <Project>{F4D3A794-D1CB-443C-9A0B-E524E94C7322}</Project>
+      <Name>Valle.Distribuido</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Valle.Library\Valle.GtkUtilidades\Valle.GtkUtilidades\Valle.GtkUtilidades.csproj">
+      <Project>{9530B792-23E0-4EDD-823F-F569E1536995}</Project>
+      <Name>Valle.GtkUtilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Valle.Library\Valle.Seguridad\Valle.Seguridad.csproj">
+      <Project>{BFBD9375-F5DF-4753-BDB1-B345BCBF93E5}</Project>
+      <Name>Valle.Seguridad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Valle.Library\Valle.SqlUtilidades\Valle.SqlUtilidades\Valle.SqlUtilidades.csproj">
+      <Project>{458E7C94-0965-4B21-A45F-D079CAC27759}</Project>
+      <Name>Valle.SqlUtilidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Valle.ToolsTpv\Valle.ToolsTpv.csproj">
+      <Project>{C49A57D3-0936-47F1-B380-187731C981BE}</Project>
+      <Name>Valle.ToolsTpv</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Valle.Library\Valle.Utilidades\Valle.Utilidades\Valle.Utilidades.csproj">
+      <Project>{0291A4FE-C511-4FA2-8132-705A08973015}</Project>
+      <Name>Valle.Utilidades</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="iconos\ImgSpl.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
